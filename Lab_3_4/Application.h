@@ -135,6 +135,9 @@ public:
 
 	// метод, выводящий на экран все соединения
 	void print_all_connects() {
+		// выводим нужные слова
+		cout << "\nSet connects";
+
 		// для каждого соединения...
 		for (map<int, pair<string, string>>::iterator it = all_connects.begin(); it != all_connects.end(); it++) {
 			// выводим информацию о нём в нужном формате
@@ -180,7 +183,7 @@ public:
 		// Выводим нужное сообщение
 		cout << "Object tree";
 		// Выводим объекты дерева иерархии
-		DFS_primal();
+		DFS();
 		// выводим все соединения
 		print_all_connects();
 		// исполняем все сигналы
